@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarala:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    font-family: "Sarala", sans-serif;
+}
+
+:root{
+    --primeira-cor: #101828;
+    --segunda-cor: #5b5e65;
+    --terceira-cor: #d0d5dd;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primeira-cor);
+    height: 100vh;
+}
+
+.container {
+    width: 80%;
+    max-width: 400px;
+    border-radius: 20px;
+    background-color: var(--segunda-cor);
+}
+
+.cabeca {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    > .input_city {
+        height: 30px;
+        width: 80%;
+        border-radius: 20px;
+        text-align: center;
+        font-size: 1rem;
+    }
+    > button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 30px;
+        width: 17%;
+        border-radius: 20px;
+        cursor: pointer;
+        > img{
+            height: 30px;
+        }
+    }
+    > button:hover {
+        background-color: var(--terceira-cor);
+    }
+    > button:active {
+        background-color: var(--terceira-cor);
+    }
+}
+
+.corpo {
+    display: none;
+    color: var(--terceira-cor);
+    > .cidade {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        > img {
+            height: 40px;
+        }
+    }
+    > .main_status {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+    > .descricao {
+        text-align: center;
+        color: var(--terceira-cor);
+        text-transform: capitalize;
+    }
+    > .rodape {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 60px;
+        margin: 7px;
+        > .umidade {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            height: 100%;
+            width: 50%;
+            > img {
+                height: 40px;
+            }
+        }
+        > .vento {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            height: 100%;
+            width: 50%;
+            > img {
+                height: 40px;
+            }
+        }
+    }
+}
+
+h1 {
+    font-size: 2rem;
+}

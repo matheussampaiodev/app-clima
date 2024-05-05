@@ -12,6 +12,7 @@ async function buscar() {
     document.querySelector('.umidade_status').innerHTML = `${dados.main.humidity}%`;
     document.querySelector('.vento_status').innerHTML = `${dados.wind.speed}km/h`;
     document.querySelector('.corpo').style.display = 'block';
+    document.querySelector('.input_city').value = '';
     } catch(error) {
         alert('Algo deu errado, verifique o nome da cidade e tente novamente');
     }
